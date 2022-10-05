@@ -1,10 +1,35 @@
 body
 {
-    background: #24314e;
+    background: #28112b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.assignment
+{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background: #454643;
+}
+
+.assignment img
+{
+    height: 200px;
+    padding: 10px;
 }
 
 h1
 {
-    color: #ffb02e;
+    color: #b80000;
+    text-align: center;
+}
+
+body
+{
+    color: #8daa91;
+}
+
+a
+{
+    color: #b80000;
 }
