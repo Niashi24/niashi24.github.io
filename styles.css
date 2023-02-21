@@ -1,62 +1,11 @@
 body
 {
     background: #28112b;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-
-.assignments
-{
-    display:flex;
-    flex-wrap:wrap;
-}
-
-.assignment
-{
-    width: 23%;
-    padding: 10px;
-    margin: 10px;
-    background: #454643;
-    border-radius: 5px;
-}
-
-.assignment img
-{
-    height: 200px;
-    margin: 10px;
-    border: 4px solid #8daa91;
-    display: block;
-    margin: auto;
-}
-
-.assignment img:hover
-{
-    border: 4px solid #28112b;
-}
-
 
 h1
 {
     color: #b80000;
     text-align: center;
-}
-
-h2
-{
-    text-align: center;
-}
-
-body
-{
-    color: #8daa91;
-}
-
-a
-{
-    text-decoration: none;
-    color: #8daa91;
-}
-
-a:hover
-{
-    color: #b80000;
 }
