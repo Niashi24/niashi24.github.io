@@ -13,6 +13,10 @@ h1 {
     position: absolute;
 }
 
+.button img {
+    vertical-align: top;
+}
+
 /* Hide the pressed image by default */
 .button img.pressed {
     display: none;
@@ -25,4 +29,18 @@ h1 {
 
 .button:active img.pressed {
     display: block;
+}
+
+.button:hover {
+  outline: 1px solid yellow;
+  animation: flashOutline 0.01s infinite;
+}
+
+@keyframes flashOutline {
+  0%, 100% {
+    outline: 1px solid yellow;
+  }
+  50% {
+    outline: none;
+  }
 }
