@@ -44,15 +44,6 @@ img {
     display: block;
 }
 
-.reverse-button:active img {
-    filter: invert(100%);
-}
-
-.hover-flashing-outline:hover {
-    outline: 1px solid #FFDEA5;
-    animation: flashOutline 0.02s infinite;
-}
-
 @keyframes flashOutline {
 
     0%,
@@ -70,33 +61,18 @@ img {
     justify-content: center;
 }
 
-#sidebar-left,
-#sidebar-right,
-#center {
-    flex: 1;
-    /* Allow the items to grow and fill the available space */
+#sidebar-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-#sidebar-left,
 #sidebar-right {
-    background-color: #f2f2f2;
-    /* Example background color for sidebars */
-    padding: 10px;
-    flex: 1;
-    /* Example padding for sidebars */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#center {
-    background-color: #ddd;
-    /* Example background color for center content */
-    /* padding: 20px; */
-    /* Example padding for center content */
+.container img {
+  margin: 5px; /* Optional: Add some spacing between images */
 }
-
-#sidebar-left a {
-    justify-content: right;
-}
-
-/* * {
-    border: 1px solid red;
-} */

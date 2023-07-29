@@ -4,47 +4,60 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Unity WebGL Player | FlappyClone</title>
 </head>
 
 <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-  <span>
-    <a href="../../index.html" class="button">
-      <img class="unpressed" src="../../Styles/return-button-unpressed.png" alt="Unpressed Button">
-      <img class="pressed" src="../../Styles/return-button-pressed.png" alt="Pressed Button">
-    </a>
-  </span>
-  <canvas id="unity-canvas" width=576 height=800 style="width: 576px; height: 800px; background: #231F20"></canvas>
-  <script src="Build/WebGL.loader.js"></script>
-  <script>
-    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-      // Mobile device style: fill the whole browser client area with the game canvas:
-      var meta = document.createElement('meta');
-      meta.name = 'viewport';
-      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-      document.getElementsByTagName('head')[0].appendChild(meta);
+  <h1>Play Flappy Bird</h1>
+  <div class="container">
+    <div id="sidebar-left">
+      <a href="/index.html" class="button">
+        <img class="unpressed" src="/Styles/return-button-unpressed.png" alt="Unpressed Button">
+        <img class="pressed" src="/Styles/return-button-pressed.png" alt="Pressed Button">
+      </a>
+    </div>
+    <div id="center">
+      <canvas id="unity-canvas" width=432 height=600 style="width: 432px; height: 600px; background: #231F20"></canvas>
+      <script src="Build/WebGL.loader.js"></script>
+      <script>
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 
-      var canvas = document.querySelector("#unity-canvas");
-      canvas.style.width = "100%";
-      canvas.style.height = "100%";
-      canvas.style.position = "fixed";
+          // Mobile device style: fill the whole browser client area with the game canvas:
+          var meta = document.createElement('meta');
+          meta.name = 'viewport';
+          meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+          document.getElementsByTagName('head')[0].appendChild(meta);
 
-      document.body.style.textAlign = "left";
-    }
+          var canvas = document.querySelector("#unity-canvas");
+          canvas.style.width = "100%";
+          canvas.style.height = "100%";
+          canvas.style.position = "fixed";
 
-    createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "Build/WebGL.data",
-      frameworkUrl: "Build/WebGL.framework.js",
-      codeUrl: "Build/WebGL.wasm",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "NiashiWorks",
-      productName: "FlappyClone",
-      productVersion: "1.0",
-      // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-      // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-    });
-  </script>
+          document.body.style.textAlign = "left";
+        }
+
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+          dataUrl: "Build/WebGL.data",
+          frameworkUrl: "Build/WebGL.framework.js",
+          codeUrl: "Build/WebGL.wasm",
+          streamingAssetsUrl: "StreamingAssets",
+          companyName: "NiashiWorks",
+          productName: "FlappyClone",
+          productVersion: "1.0",
+          // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+          // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        });
+      </script>
+    </div>
+    <div id="sidebar-right">
+      <a href="https://github.com/Niashi24/FlappyClone" class="button" target="_blank">
+        <img class="unpressed" src="/Styles/view-on-github-unpressed.png" alt="Unpressed Button">
+        <img class="pressed" src="/Styles/view-on-github-pressed.png" alt="Pressed Button">
+      </a>
+    </div>
+  </div>
+
 </body>
 
 </html>
