@@ -20,6 +20,10 @@ img {
     image-rendering: pixelated;
 }
 
+a:visited {
+    color:#1a8b83;
+}
+
 .button {
     display: inline-block;
 }
@@ -51,7 +55,25 @@ img {
 .main-container {
     display: flex;
     flex-direction: column;
+    justify-content:center;
     width: 100%;
+}
+
+.description {
+    background-color: darkslategray;
+    color:white;
+    outline: 1px solid black;
+    justify-content: center;
+    display: flex;
+}
+
+.description .center {
+    justify-content: center;
+}
+
+.description p {
+    justify-content: center;
+    margin: 5px;
 }
 
 .games {
@@ -74,10 +96,6 @@ img {
     justify-content: center;
 }
 
-.container img {
-    margin: 5px;
-}
-
 #sidebar-left {
     display: flex;
     flex-direction: column;
@@ -88,6 +106,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#center {
+    margin: 5px;
 }
 
 /* sidebars should fill all space that center does not */
