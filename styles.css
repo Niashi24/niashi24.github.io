@@ -55,6 +55,7 @@ a:visited {
 .main-container {
     display: flex;
     flex-direction: column;
+    margin: auto;
     justify-content:center;
     width: 100%;
 }
@@ -65,6 +66,8 @@ a:visited {
     outline: 1px solid black;
     justify-content: center;
     display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 #center .description {
