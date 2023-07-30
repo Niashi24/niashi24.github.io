@@ -1,9 +1,11 @@
 body {
     background: #8a0b2b;
     font-family: "MS PGothic", sans-serif;
+    background-image: url("Styles/test-background.png");
+    image-rendering: pixelated;
 }
 
-* {
+html {
     animation: cursor-gif 0.8s steps(8) infinite;
 }
 
