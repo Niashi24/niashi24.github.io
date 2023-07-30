@@ -3,7 +3,6 @@ body {
     font-family: "MS PGothic", sans-serif;
 }
 
-
 h1 {
     color: #ffc3c3;
     font-size: 36px;
@@ -49,21 +48,25 @@ img {
     filter: invert(100%);
 }
 
-.hover-flashing-outline:hover {
-    outline: 1px solid #FFDEA5;
-    animation: flashOutline 0.02s infinite;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-@keyframes flashOutline {
+.games {
+    flex: 1;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    padding:0%;
+}
 
-    0%,
-    100% {
-        outline: 1px solid #FFDEA5;
-    }
-
-    50% {
-        outline: none;
-    }
+.links {
+    flex: 1;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
 }
 
 .container {
@@ -71,33 +74,23 @@ img {
     justify-content: center;
 }
 
-#sidebar-left,
-#sidebar-right,
-#center {
-    flex: 1;
-    /* Allow the items to grow and fill the available space */
+.container img {
+    margin: 5px;
 }
 
-#sidebar-left,
+#sidebar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 #sidebar-right {
-    background-color: #f2f2f2;
-    /* Example background color for sidebars */
-    padding: 10px;
-    flex: 1;
-    /* Example padding for sidebars */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#center {
-    background-color: #ddd;
-    /* Example background color for center content */
-    /* padding: 20px; */
-    /* Example padding for center content */
+/* sidebars should fill all space that center does not */
+#sidebar-left, #sidebar-right {
+    width: 100%
 }
-
-#sidebar-left a {
-    justify-content: right;
-}
-
-/* * {
-    border: 1px solid red;
-} */
