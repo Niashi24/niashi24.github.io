@@ -3,6 +3,37 @@ body {
     font-family: "MS PGothic", sans-serif;
 }
 
+* {
+    animation: cursor-gif 0.8s steps(8) infinite;
+}
+
+@keyframes cursor-gif {
+    0%, 100% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou1.png"), auto;
+    }
+    12.5% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou2.png"), auto;
+    }
+    25% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou3.png"), auto;
+    }
+    37.5% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou4.png"), auto;
+    }
+    50% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou5.png"), auto;
+    }
+    62.5% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou6.png"), auto;
+    }
+    75% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou7.png"), auto;
+    }
+    87.5% {
+        cursor: url("Styles/madou-mouse/mouse-cursor-madou8.png"), auto;
+    }
+}
+
 h1 {
     color: #ffc3c3;
     font-size: 36px;
