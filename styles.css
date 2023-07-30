@@ -67,12 +67,13 @@ a:visited {
     display: flex;
 }
 
-.description .center {
+#center .description {
     justify-content: center;
 }
 
 .description p {
     justify-content: center;
+    text-align: center;
     margin: 5px;
 }
 
