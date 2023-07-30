@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="skyshooter-favicon.png">
+  <title>SkyShooter</title>
+</head>
+
+<body style="text-align: center">
+  <h1>SkyShooter</h1>
+  <div class="container">
+    <div id="sidebar-left">
+      <a href="/index.html" class="button">
+        <img class="unpressed" src="/Styles/return-button-unpressed.png" alt="Unpressed Button" title="Return">
+        <img class="pressed" src="/Styles/return-button-pressed.png" alt="Pressed Button" title="Return">
+      </a>
+    </div>
+    <div id="center">
+      <canvas id="unity-canvas" width=384 height=576 style="width: 384px; height: 576px; background: #231F20"></canvas>
+      <script src="Build/WebGL.loader.js"></script>
+      <script>
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+          dataUrl: "Build/WebGL.data",
+          frameworkUrl: "Build/WebGL.framework.js",
+          codeUrl: "Build/WebGL.wasm",
+          streamingAssetsUrl: "StreamingAssets",
+          companyName: "DefaultCompany",
+          productName: "SkyShooter",
+          productVersion: "1.0",
+          // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+          // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        });
+      </script>
+      <span><br></span>
+      <div class="description" style="width: 384px; margin: auto;">
+        <p>
+          Released: March 6, 2022<br>
+          A game made for my AP Research Project researching the effects of player customization on enjoyment in video games.
+          Players would randomly be assigned at startup to be in either the control group (Form A ingame) or the customization group (Form B).
+          Once they were done, they entered their stats into a google form.
+          To switch between groups manually, press the tilde (~) key on the title screen.
+          The max score is 21250. There's also a easter egg on the title screen, see if you can find it ;)
+          <br><br>Requires a keyboard.
+        </p>
+      </div>
+    </div>
+    <div id="sidebar-right">
+      <a href="https://github.com/Niashi24/Top-Down-Shooter-v3" class="button" target="_blank">
+        <img class="unpressed" src="/Styles/view-code-unpressed.png" alt="View Code" title="View Code">
+        <img class="pressed" src="/Styles/view-code-pressed.png" alt="View Code" title="View Code">
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
