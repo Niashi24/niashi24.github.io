@@ -93,7 +93,7 @@ a:visited {
     width: 100%;
 }
 
-.description {
+.description, figure {
     background-color: darkslategray;
     color:white;
     outline: 1px solid black;
@@ -131,6 +131,26 @@ a:visited {
 .container {
     display: flex;
     justify-content: center;
+}
+
+.wip {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: #ffc3c3;
+    font-size: 24px;
+    font-style: italic;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    ;
+    text-align: center;
 }
 
 #sidebar-left {
