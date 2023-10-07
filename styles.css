@@ -153,6 +153,19 @@ a:visited {
     text-align: center;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    height: 48px;
+}
+
+.social a img:hover {
+    filter: brightness(50%);
+}
+
 #sidebar-left {
     display: flex;
     flex-direction: column;
