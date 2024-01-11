@@ -1,0 +1,15 @@
+.gallery {
+    flex:content;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* width: 100px; */
+}
+
+.gallery img {
+    width: 120px;
+}
+
+h1 {
+    color: white !important
+}
