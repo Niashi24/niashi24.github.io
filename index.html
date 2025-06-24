@@ -1,103 +1,232 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Niashi's Games Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <meta content="Niashi's Games Portfolio" property="og:title" />
-    <meta content="A website to showcase all my projects." property="og:description" />
+    <meta
+      content="A website to showcase all my projects."
+      property="og:description"
+    />
     <meta content="https://niashi24.github.io" property="og:url" />
     <meta content="Styles/embed-photo.png" property="og:image" />
     <meta content="#8a0b2b" data-react-helmet="true" name="theme-color" />
-    <meta name="twitter:card" content="Styles/embed-photo.png">
-</head>
+    <meta name="twitter:card" content="Styles/embed-photo.png" />
+  </head>
 
-<body>
-    <h1>
-        Niashi's Games Portfolio
-    </h1>
+  <body>
+    <header>
+      <h1>Niashi's Games Portfolio</h1>
+      <h2>Software Engineer and Game Developer</h2>
+    </header>
+    <main>
+      <section class="skills-section">
+        <h2>Skills</h2>
+        <table cellspacing="0" cellpadding="0">
+          <tr class="skill-type">
+            <td>Languages</td>
+            <td class="skills">
+              <div class="skill">
+                <img src="Styles/rust-logo.svg" alt="Rust Logo" />
+                <span>Rust</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/csharp-logo.svg" alt="C# Logo" />
+                <span>C#</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/java-logo.svg" alt="Java Logo" />
+                <span>Java</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/html-logo.svg" alt="HTML Logo" />
+                <span>HTML</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/css-logo.svg" alt="CSS Logo" />
+                <span>CSS</span>
+              </div>
+            </td>
+          </tr>
+          <tr class="skill-type">
+            <td>Engines</td>
+            <td class="skills">
+              <div class="skill">
+                <img src="Styles/bevy-logo.svg" alt="Bevy Logo" />
+                <span>Bevy</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/unity-logo.svg" alt="Unit Logo" />
+                <span>Unity</span>
+              </div>
+            </td>
+          </tr>
+          <tr class="skill-type">
+            <td>Tools</td>
+            <td class="skills">
+              <div class="skill">
+                <img src="Styles/git-logo.svg" alt="Git Logo" />
+                <span>Git</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/github-logo.svg" alt="Github Logo" />
+                <span>Github</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/jira-logo.svg" alt="Jira Logo" />
+                <span>Jira</span>
+              </div>
+              <div class="skill">
+                <img src="Styles/slack-logo.svg" alt="Slack Logo" />
+                <span>Slack</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
     <div class="container">
-        <div id="sidebar-left"></div>
-        <div id="center">
-            <div class="main-container">
-                <div class="description" style="width: 576px;">
-                    <p>
-                        Hi, I'm Niashi<sup style="font-size: 75%;">she/her</sup>. I'm a trans programmer/game developer studying Computer Science and hoping to make a career in game development.
-                        <br><br>This is a website showcasing off all of my web games/projects,
-                        and is very inspired by the <a href="https://puyonexus.com/wiki/Disc_Station" target="_blank">DiscStation Magazines</a> published by Compile for Windows.
-                        <br><br>I mainly specialize in programming in C# and Unity, though I dabble in other things as well, including Rust and HTML and CSS.
-                        <br><br>The code is available for most of these projects and can be found on the sidebar of each page. The code for this website is linked at the bottom of the page.
-                        <br><br>This website is best viewed on a computer.
-                    </p>
-                </div>
-                
-                <audio src="Styles/Puyo-Puyon-N64-What-Doing-you-Play.mp3" style="width: 352px; margin: auto;" controls loop title="'What Doing, you Play?' from Puyo Puyo~n (N64)">
-                    Audio playback is not supported on your device ;-;
-                </audio>
-                <span><br></span>
-                <span class="subtitle">Work-In-Progress Games</span>
-                <div class="wip">
-
-                    <section class="wipproject">
-                        <a href="Projects/SaturnRPG/index.html" class="reverse-button">
-                            <img src="Styles/untitled-saturn-rpg-launch-button.png" alt="View Saturn RPG" title="View Saturn RPG">
-                        </a>
-                    </section>
-                    <section class="wipproject">
-                        <a href="Projects/SpeedPong/index.html" class="reverse-button">
-                            <img src="Styles/speedpong-launch-button.png" alt="View Speed Pong" title="View Speed Pong">
-                        </a>
-                    </section>
-                </div>
-                <span><br></span>
-                <span class="subtitle">Finished/Playable Games</span>
-                <div class="games">
-                    <section class="game">
-                        <a href="Projects/FlappyBird/index.html" class="reverse-button">
-                            <img src="Styles/flappy-bird-launch-button.png" alt="Launch Flappy Bird" title="Launch Flappy Bird">
-                        </a>
-                    </section>
-                    <section class="game">
-                        <a href="Projects/SkyShooter/index.html" class="reverse-button">
-                            <img src="Styles/skyshooter-launch-button.png" alt="Launch SkyShooter" title="Launch SkyShooter">
-                        </a>
-                    </section>
-                    <section class="game">
-                        <a href="Projects/tetris-code-org/index.html" class="reverse-button">
-                            <img src="Styles/tetris-code-org-launch-button.png" alt="Launch Tetris" title="Launch Tetris">
-                        </a>
-                    </section>
-                </div>
-                <span><br></span>
-                <div class="links">
-                    <section class="link">
-                        <a href="https://github.com/Niashi24/niashi24.github.io" class="button" target="_blank">
-                            <img class="unpressed" src="/Styles/view-code-unpressed.png" alt="View Code" title="View Code">
-                            <img class="pressed" src="/Styles/view-code-pressed.png" alt="View Code" title="View Code">
-                        </a>
-                    </section>
-                    <section class="link">
-                        <a href="credits.html" class="button">
-                            <img class="unpressed" src="/Styles/credits-unpressed.png" alt="View Credits" title="View Credits">
-                            <img class="pressed" src="/Styles/credits-pressed.png" alt="View Credits" title="View Credits">
-                        </a>
-                    </section>
-                </div>
-                <span><br></span>
-                <div class="socials">
-                    <section class="social">
-                        <a href="https://github.com/Niashi24" target="_blank">
-                            <img src="Styles/github-mark.svg" alt="View Github Page" title="View Github Page">
-                        </a>
-                    </section>
-                </div>
+      <div id="center">
+        <div class="main-container">
+          <div class="description">
+            <div>
+              Hi, I'm Niashi<sup style="font-size: 75%">she/her</sup>. I'm a
+              programmer/game developer studying Computer Science and
+              hoping to make a career in game development. <br /><br />This is a
+              website showcasing off all of my web games/projects, and is very
+              inspired by the
+              <a href="https://puyonexus.com/wiki/Disc_Station" target="_blank"
+                >DiscStation Magazines</a
+              >
+              published by Compile for Windows. <br /><br />
+              I mainly specialize in programming in Rust, Java, and C# with
+              Unity, but I'm always looking to learn new things. <br /><br />The
+              code is available for most of these projects and can be found on
+              the sidebar of each page. The code for this website is linked at
+              the bottom of the page. <br /><br />This website is best viewed on
+              a computer.
             </div>
+          </div>
+
+          <audio
+            src="Styles/Puyo-Puyon-N64-What-Doing-you-Play.mp3"
+            style="width: 352px; margin: auto"
+            controls
+            loop
+            title="'What Doing, you Play?' from Puyo Puyo~n (N64)"
+          >
+            Audio playback is not supported on your device ;-;
+          </audio>
+          <span><br /></span>
+          <!-- <span class="subtitle">Work-In-Progress Games</span>
+          <div class="wip">
+            <section class="wipproject">
+              <a href="Projects/SaturnRPG/index.html" class="reverse-button">
+                <img
+                  src="Styles/untitled-saturn-rpg-launch-button.png"
+                  alt="View Saturn RPG"
+                  title="View Saturn RPG"
+                />
+              </a>
+            </section>
+            <section class="wipproject">
+              <a href="Projects/SpeedPong/index.html" class="reverse-button">
+                <img
+                  src="Styles/speedpong-launch-button.png"
+                  alt="View Speed Pong"
+                  title="View Speed Pong"
+                />
+              </a>
+            </section>
+          </div> -->
+          <span><br /></span>
+          <span class="subtitle">Finished/Playable Games</span>
+          <div class="games">
+            <section class="game">
+              <a href="Projects/FlappyBird/index.html" class="reverse-button">
+                <img
+                  src="Styles/flappy-bird-launch-button.png"
+                  alt="Launch Flappy Bird"
+                  title="Launch Flappy Bird"
+                />
+              </a>
+            </section>
+            <section class="game">
+              <a href="Projects/SkyShooter/index.html" class="reverse-button">
+                <img
+                  src="Styles/skyshooter-launch-button.png"
+                  alt="Launch SkyShooter"
+                  title="Launch SkyShooter"
+                />
+              </a>
+            </section>
+            <section class="game">
+              <a
+                href="Projects/tetris-code-org/index.html"
+                class="reverse-button"
+              >
+                <img
+                  src="Styles/tetris-code-org-launch-button.png"
+                  alt="Launch Tetris"
+                  title="Launch Tetris"
+                />
+              </a>
+            </section>
+          </div>
+          <span><br /></span>
+          <div class="links">
+            <section class="link">
+              <a
+                href="https://github.com/Niashi24/niashi24.github.io"
+                class="button"
+                target="_blank"
+              >
+                <img
+                  class="unpressed"
+                  src="/Styles/view-code-unpressed.png"
+                  alt="View Code"
+                  title="View Code"
+                />
+                <img
+                  class="pressed"
+                  src="/Styles/view-code-pressed.png"
+                  alt="View Code"
+                  title="View Code"
+                />
+              </a>
+            </section>
+            <section class="link">
+              <a href="credits.html" class="button">
+                <img
+                  class="unpressed"
+                  src="/Styles/credits-unpressed.png"
+                  alt="View Credits"
+                  title="View Credits"
+                />
+                <img
+                  class="pressed"
+                  src="/Styles/credits-pressed.png"
+                  alt="View Credits"
+                  title="View Credits"
+                />
+              </a>
+            </section>
+          </div>
+          <span><br /></span>
+          <div class="socials">
+            <section class="social">
+              <a href="https://github.com/Niashi24" target="_blank">
+                <img
+                  src="Styles/github-mark.svg"
+                  alt="View Github Page"
+                  title="View Github Page"
+                />
+              </a>
+            </section>
+          </div>
         </div>
-        <div id="sidebar-right"></div>
+      </div>
     </div>
-    
-
-</body>
-
+  </body>
 </html>
