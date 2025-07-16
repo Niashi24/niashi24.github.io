@@ -229,6 +229,13 @@ a:visited {
     padding:0%;
 }
 
+a {
+    color: #6262f2;
+}
+a:visited {
+    color: #dcb8ff;
+}
+
 .links {
     flex: 1;
     justify-content: center;
