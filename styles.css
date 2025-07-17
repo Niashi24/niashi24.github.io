@@ -229,12 +229,9 @@ a:visited {
     padding:0%;
 }
 
-a {
-    color: #6262f2;
-}
-a:visited {
-    color: #dcb8ff;
-}
+:link { color: #6BFFF3; }
+:visited { color: #6BFFAB; }
+:link:active, :visited:active { color: #FFEF40; }
 
 .links {
     flex: 1;
